@@ -9,3 +9,9 @@ Fazer o desacoplamento
 ## Mensageria
 
 Mensageria é uma técnica que possibilita a comunicação entre diferentes aplicações por meio de mensagens. Esse tipo de mensageria é usada para separar as aplicações uma das outras, tornando o desenvolvimento e manutenção mais fáceis. Ou seja, ter multiplos sistemas de forma assicrona, de forma que um não dependa exclusivamente da resposta do outro; 
+
+rodar rabbitmq via docker:
+
+```bash
+docker run -d --name my_rabbitmq -p 15672:15672 -e RABBITMQ_DEFAULT_USER=rabbitmq -e RABBITMQ_DEFAULT_PASS=rabbitmq rabbitmq:3.10.5-management
+```
