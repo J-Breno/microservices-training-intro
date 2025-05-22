@@ -22,7 +22,7 @@ public class Pedido {
     private List<ItemPedido> itens = new ArrayList<>();
     private Double valorTotal;
     private String emailNotificacao;
-    private Status status;
+    private Status status = Status.EM_PROCESSAMENTO;
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime dataHora;
+    private LocalDateTime dataHora = LocalDateTime.now();
 }
